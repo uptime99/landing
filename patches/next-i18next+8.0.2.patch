@@ -1,0 +1,36 @@
+diff --git a/node_modules/next-i18next/src/appWithTranslation.tsx b/node_modules/next-i18next/src/appWithTranslation.tsx
+index b28fc51..7a54761 100644
+--- a/node_modules/next-i18next/src/appWithTranslation.tsx
++++ b/node_modules/next-i18next/src/appWithTranslation.tsx
+@@ -1,3 +1,4 @@
++// @ts-nocheck
+ import React from 'react'
+ import hoistNonReactStatics from 'hoist-non-react-statics'
+ import { I18nextProvider } from 'react-i18next'
+diff --git a/node_modules/next-i18next/src/config/createConfig.ts b/node_modules/next-i18next/src/config/createConfig.ts
+index 6fa7939..a2d2a9a 100644
+--- a/node_modules/next-i18next/src/config/createConfig.ts
++++ b/node_modules/next-i18next/src/config/createConfig.ts
+@@ -1,3 +1,4 @@
++// @ts-nocheck
+ import { defaultConfig } from './defaultConfig'
+ import { InternalConfig, UserConfig } from '../../types'
+ 
+diff --git a/node_modules/next-i18next/src/createClient/node.ts b/node_modules/next-i18next/src/createClient/node.ts
+index aa0ac2b..6465ce8 100644
+--- a/node_modules/next-i18next/src/createClient/node.ts
++++ b/node_modules/next-i18next/src/createClient/node.ts
+@@ -1,3 +1,4 @@
++// @ts-nocheck
+ import i18n from 'i18next'
+ import i18nextFSBackend from 'i18next-fs-backend/cjs'
+ 
+diff --git a/node_modules/next-i18next/src/serverSideTranslations.ts b/node_modules/next-i18next/src/serverSideTranslations.ts
+index de00190..46dbf69 100644
+--- a/node_modules/next-i18next/src/serverSideTranslations.ts
++++ b/node_modules/next-i18next/src/serverSideTranslations.ts
+@@ -1,3 +1,4 @@
++// @ts-nocheck
+ import fs from 'fs'
+ import path from 'path'
+ 
