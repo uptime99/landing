@@ -6,7 +6,6 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "boost": "NODE_ENV=production node server.js",
     "eslint": "eslint --ext .js,.ts,.tsx .",
     "stylelint": "stylelint \"**/*.tsx\"",
     "lint": "yarn eslint",
