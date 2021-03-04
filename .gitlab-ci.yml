@@ -35,3 +35,13 @@ build docker image:
     - echo "VERCEL_GITLAB_COMMIT_SHA=$CI_COMMIT_SHA" >> .env
     - docker build --cache-from $IMAGE_TAG -t $IMAGE_TAG .
     - docker push $IMAGE_TAG
+
+deploy to swarm dev:
+  stage: deploy
+  only:
+    - develop
+  variables:
+    ENVIRONMENT: dev
+  trigger:
+    project: uptime99/devops/status
+    branch: master
