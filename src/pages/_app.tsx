@@ -1,6 +1,5 @@
 import React from 'react';
 import * as Sentry from '@sentry/react';
-import { SnackbarProvider } from 'notistack';
 import NProgress from 'nprogress';
 
 import { appWithTranslation } from 'next-i18next';
@@ -8,7 +7,7 @@ import { PageTransition } from 'next-page-transitions';
 import { AppProps } from 'next/app';
 import Router from 'next/router';
 
-import { __DEV___, __NODE___, snackbarAnchorOrigin } from '@src/configuration';
+import { __DEV___, __NODE___ } from '@src/configuration';
 import Theme from '@src/theme';
 
 import '@src/theme/fonts.css';
@@ -40,15 +39,13 @@ const App: React.FC<AppProps & { err: any }> = ({
 }) => {
   return (
     <Theme>
-      <SnackbarProvider anchorOrigin={snackbarAnchorOrigin}>
-        <PageTransition
-          timeout={200}
-          classNames="page-transition"
-          key={router.route}
-        >
-          <Component {...pageProps} key={router.route} err={err} />
-        </PageTransition>
-      </SnackbarProvider>
+      <PageTransition
+        timeout={200}
+        classNames="page-transition"
+        key={router.route}
+      >
+        <Component {...pageProps} key={router.route} err={err} />
+      </PageTransition>
     </Theme>
   );
 };
