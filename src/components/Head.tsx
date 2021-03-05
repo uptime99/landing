@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTheme } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
 
 import { useTranslation } from 'next-i18next';
 import NextHead from 'next/head';
