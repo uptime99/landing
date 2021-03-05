@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
+      '& > *': {
+        justifyContent: 'center',
+      },
     },
   },
 }));

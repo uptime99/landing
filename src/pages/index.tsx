@@ -17,7 +17,7 @@ const Page: NextPage<Props> = () => {
   return (
     <>
       <Head
-        title={`${t('Uptime99')} | ${'Free Website Monitoring'}`}
+        title={`${t('Uptime99')} | ${t('Free Website Monitoring')}`}
         description={t('Uptime99 Description')}
         keywords="uptime, uptime monitor, uptime99"
         robots="index, follow"

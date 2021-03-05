@@ -8,7 +8,6 @@ import {
   IconButton,
   Toolbar,
   Typography,
-  useTheme,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { Close as CloseIcon, Menu as MenuIcon } from '@material-ui/icons';
@@ -50,7 +49,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Header: React.FC<Props> = () => {
-  const theme = useTheme();
   const classes = useStyles();
   const { t } = useTranslation();
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -79,7 +77,7 @@ const Header: React.FC<Props> = () => {
             <Hidden mdUp implementation="css">
               <Drawer
                 variant="temporary"
-                anchor={theme.direction === 'rtl' ? 'right' : 'left'}
+                anchor="left"
                 open={mobileOpen}
                 onClose={handleDrawerToggle}
                 classes={{
