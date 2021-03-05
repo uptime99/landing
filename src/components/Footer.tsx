@@ -1,10 +1,6 @@
 import React from 'react';
-import { Box, Button, Container, Link, Typography } from '@material-ui/core';
+import { Container, Link, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import {
-  Fullscreen as FullscreenIcon,
-  NotificationsActive as NotificationsActiveIcon,
-} from '@material-ui/icons';
 
 import { useTranslation } from 'next-i18next';
 
@@ -28,14 +24,6 @@ const Header: React.FC<Props> = () => {
 
   return (
     <Container className={classes.footer} component="footer" maxWidth="lg">
-      <Box display="flex" flexDirection="row">
-        <Button variant="text" startIcon={<FullscreenIcon />}>
-          {t('Fullscreen mode')}
-        </Button>
-        <Button variant="text" startIcon={<NotificationsActiveIcon />}>
-          {t('Alert sound off')}
-        </Button>
-      </Box>
       <Typography>
         {t('Powered by')} <Link href="https://uptime99.net">Uptime99</Link>
       </Typography>

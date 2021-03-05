@@ -2,18 +2,21 @@ import React from 'react';
 
 import Footer from '@src/components/Footer';
 import Header from '@src/components/Header';
-import Main from '@src/components/Main';
+
+import Hero from './Hero';
 
 type Props = {
-  title: string;
   children: NonNullable<React.ReactNode>;
 };
 
-const Base: React.FC<Props> = ({ title, children }) => {
+const Base: React.FC<Props> = ({ children }) => {
   return (
     <>
-      <Header title={title} />
-      <Main>{children}</Main>
+      <Header />
+      <main>
+        <Hero />
+        {children}
+      </main>
       <Footer />
     </>
   );

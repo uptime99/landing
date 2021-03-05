@@ -1,28 +1,61 @@
 import React from 'react';
-import { AppBar, Typography } from '@material-ui/core';
+import {
+  AppBar,
+  Button,
+  Container,
+  Toolbar,
+  Typography,
+} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-type Props = {
-  title: string;
-};
+import { useTranslation } from 'next-i18next';
+
+import { preventDefault } from '@src/utils';
+
+type Props = {};
 
 const useStyles = makeStyles((theme) => ({
-  header: {
-    minHeight: 300,
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingBottom: theme.spacing(4),
+  row: {
+    display: 'flex',
+    flexDirection: 'row',
+    '& > *': {
+      margin: theme.spacing(0, 0.5),
+    },
+  },
+  toolbar: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   },
 }));
 
-const Header: React.FC<Props> = ({ title }) => {
+const Header: React.FC<Props> = () => {
   const classes = useStyles();
+  const { t } = useTranslation();
 
   return (
-    <AppBar className={classes.header} position="static" elevation={0}>
-      <Typography component="h1" variant="h4">
-        {title}
-      </Typography>
+    <AppBar position="static" elevation={0}>
+      <Container maxWidth="md">
+        <Toolbar className={classes.toolbar}>
+          <div className={classes.row}>
+            <Typography variant="h6">{t('Uptime99')}</Typography>
+            <Button color="inherit" href="#" onClick={preventDefault}>
+              {t('Features')}
+            </Button>
+            <Button color="inherit" href="#" onClick={preventDefault}>
+              {t('Integration')}
+            </Button>
+            <Button color="inherit" href="#" onClick={preventDefault}>
+              {t('Status Page')}
+            </Button>
+            <Button color="inherit" href="#" onClick={preventDefault}>
+              {t('Pricing')}
+            </Button>
+          </div>
+          <Button variant="contained" color="secondary">
+            {t('Login / Register')}
+          </Button>
+        </Toolbar>
+      </Container>
     </AppBar>
   );
 };
