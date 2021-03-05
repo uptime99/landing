@@ -1,7 +1,9 @@
 {
-  "Alert sound off": "Alert sound off",
-  "Fullscreen mode": "Fullscreen mode",
-  "Operational": "Operational",
+  "Features": "Features",
+  "Integration": "Integration",
+  "Login / Register": "Login / Register",
   "Powered by": "Powered by",
-  "Services": "Services"
+  "Pricing": "Pricing",
+  "Status Page": "Status Page",
+  "Uptime99": "Uptime99"
 }

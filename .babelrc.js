@@ -35,7 +35,8 @@ module.exports = {
         locales: i18n.locales,
         defaultNS: i18n.defaultNS,
         outputPath: `${i18n.localePath}/${i18n.localeStructure.replace('lng', 'locale')}.${i18n.localeExtension}`,
-        keyAsDefaultValue: true
+        keyAsDefaultValue: true,
+        discardOldKeys: true
       }
     ]
   ],
