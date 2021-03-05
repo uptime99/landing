@@ -43,7 +43,7 @@ deploy to swarm dev:
   variables:
     ENVIRONMENT: dev
   trigger:
-    project: uptime99/devops/status
+    project: uptime99/devops/landing
     branch: master
 
 deploy to swarm stg:
@@ -53,7 +53,7 @@ deploy to swarm stg:
   variables:
     ENVIRONMENT: stg
   trigger:
-    project: uptime99/devops/status
+    project: uptime99/devops/landing
     branch: master
 
 deploy to swarm prod:
@@ -63,5 +63,5 @@ deploy to swarm prod:
   variables:
     ENVIRONMENT: prod
   trigger:
-    project: uptime99/devops/status
+    project: uptime99/devops/landing
     branch: master
