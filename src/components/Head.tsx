@@ -5,7 +5,11 @@ import { useTranslation } from 'next-i18next';
 import NextHead from 'next/head';
 import { useRouter } from 'next/router';
 
-import { defaultCanonicalURL, defaultLocale } from '@src/configuration';
+import {
+  defaultCanonicalURL,
+  defaultFontFamily,
+  defaultLocale,
+} from '@src/configuration';
 
 type Props = {
   title?: string;
@@ -116,6 +120,12 @@ const Head: React.FC<Props> = ({
         src="https://static.cloudflareinsights.com/beacon.min.js"
         data-cf-beacon='{"token": "5cc45a88f3fd4270b085f138e39d03d8", "spa": true}'
       />
+      {theme.typography.fontFamily === defaultFontFamily && (
+        <link
+          href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700"
+          rel="stylesheet"
+        />
+      )}
     </NextHead>
   );
 };
