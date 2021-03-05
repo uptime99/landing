@@ -45,3 +45,23 @@ deploy to swarm dev:
   trigger:
     project: uptime99/devops/status
     branch: master
+
+deploy to swarm stg:
+  stage: deploy
+  only:
+    - staging
+  variables:
+    ENVIRONMENT: stg
+  trigger:
+    project: uptime99/devops/status
+    branch: master
+
+deploy to swarm prod:
+  stage: deploy
+  only:
+    - master
+  variables:
+    ENVIRONMENT: prod
+  trigger:
+    project: uptime99/devops/status
+    branch: master
