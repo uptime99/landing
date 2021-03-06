@@ -15,7 +15,7 @@ import { Close as CloseIcon, Menu as MenuIcon } from '@material-ui/icons';
 
 import { useTranslation } from 'next-i18next';
 
-import { drawerWidth } from '@src/configuration';
+import { dashboardBaseURL, drawerWidth } from '@src/configuration';
 
 import BackToTop from './BackToTop';
 import Items from './Items';
@@ -116,7 +116,11 @@ const Header: React.FC<Props> = () => {
                 </Drawer>
               </Hidden>
             </nav>
-            <Button variant="contained" color="secondary">
+            <Button
+              variant="contained"
+              color="secondary"
+              href={`${dashboardBaseURL}/login`}
+            >
               {t('Login / Register')}
             </Button>
           </Toolbar>

@@ -4,6 +4,7 @@ import Footer from '@src/components/Footer';
 import Header from '@src/components/Header';
 
 import Features from './Features';
+import GetFreeAccount from './GetFreeAccount';
 import Hero from './Hero';
 import Integrations from './Integrations';
 import Pricing from './Pricing';
@@ -21,6 +22,7 @@ const Base: React.FC<Props> = () => {
         <Integrations />
         <StatusPages />
         <Pricing />
+        <GetFreeAccount />
       </main>
       <Footer />
     </>

@@ -53,6 +53,9 @@ module.exports = withPlugins(
     images: {
       domains: ['uptime99.s3.ir-thr-at1.arvanstorage.com'],
     },
+    publicRuntimeConfig: {
+      dashboardBaseURL: process.env.DASHBOARD_BASE_URL,
+    },
     webpack: (config, options) => {
       if (options.isServer) {
         config.resolve.alias['@sentry/react'] = '@sentry/node';

@@ -8,6 +8,10 @@ type Props = {};
 
 const useStyles = makeStyles((theme) => ({
   footer: {
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.primary.contrastText,
+  },
+  container: {
     display: 'flex',
     flexDirection: 'row',
     height: 100,
@@ -23,11 +27,13 @@ const Header: React.FC<Props> = () => {
   const { t } = useTranslation();
 
   return (
-    <Container className={classes.footer} component="footer" maxWidth="lg">
-      <Typography>
-        {t('Powered by')} <Link href="https://uptime99.net">Uptime99</Link>
-      </Typography>
-    </Container>
+    <footer className={classes.footer}>
+      <Container className={classes.container} maxWidth="lg">
+        <Typography color="inherit">
+          {t('Powered by')} <Link href="https://uptime99.net">Uptime99</Link>
+        </Typography>
+      </Container>
+    </footer>
   );
 };
 

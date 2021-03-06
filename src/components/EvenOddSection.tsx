@@ -1,6 +1,7 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
+import { Box, Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
 
 type Props = React.ComponentProps<typeof Box>;
 
@@ -17,15 +18,28 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: theme.palette.background.default,
     },
   },
+  container: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
 }));
 
 const EvenOddSection: React.FC<Props> = ({
   component = 'section',
+  children,
+  className,
   ...rest
 }) => {
   const classes = useStyles();
 
-  return <Box className={classes.section} component={component} {...rest} />;
+  return (
+    <Box className={classes.section} component={component} {...rest}>
+      <Container className={clsx(classes.container, className)} maxWidth="md">
+        <>{children}</>
+      </Container>
+    </Box>
+  );
 };
 
 export default React.memo(EvenOddSection);
