@@ -3,19 +3,18 @@ import React from 'react';
 import Footer from '@src/components/Footer';
 import Header from '@src/components/Header';
 
+import Features from './Features';
 import Hero from './Hero';
 
-type Props = {
-  children: NonNullable<React.ReactNode>;
-};
+type Props = {};
 
-const Base: React.FC<Props> = ({ children }) => {
+const Base: React.FC<Props> = () => {
   return (
     <>
       <Header />
       <main>
         <Hero />
-        {children}
+        <Features />
       </main>
       <Footer />
     </>

@@ -9,12 +9,12 @@ const Slogan: React.FC = () => {
   switch (locale) {
     case 'fa':
       return (
-        <Typography component="h1" variant="h2" align="center">
-          اولین سرویس{' '}
+        <Typography component="h2" variant="h3" align="center" color="primary">
+          همه‌ی آنچه برایتان مهم است در یک جا{' '}
           <Typography variant="inherit" color="secondary">
-            آپتایم مانیتورینگ
+            مانیتور
           </Typography>{' '}
-          ایرانی
+          می‌شود
           <Typography variant="inherit" color="secondary">
             .
           </Typography>
@@ -23,12 +23,12 @@ const Slogan: React.FC = () => {
     case 'en':
     default:
       return (
-        <Typography component="h1" variant="h2" align="center">
-          Another{' '}
+        <Typography component="h2" variant="h3" align="center" color="primary">
+          All you really care about{' '}
           <Typography variant="inherit" color="secondary">
-            uptime monitoring
+            monitored
           </Typography>{' '}
-          service
+          at one place
           <Typography variant="inherit" color="secondary">
             .
           </Typography>
