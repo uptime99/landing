@@ -4,8 +4,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import { useTranslation } from 'next-i18next';
 
-import { preventDefault } from '@src/utils';
-
 const useStyles = makeStyles((theme) => ({
   list: {
     display: 'flex',
@@ -34,16 +32,16 @@ const Items: React.FC = () => {
 
   return (
     <List disablePadding className={classes.list}>
-      <ListItem button color="inherit" href="#" onClick={preventDefault}>
+      <ListItem button color="inherit" href="/#features" component="a">
         {t('Features')}
       </ListItem>
-      <ListItem button color="inherit" href="#" onClick={preventDefault}>
+      <ListItem button color="inherit" href="/#integrations" component="a">
         {t('Integration')}
       </ListItem>
-      <ListItem button color="inherit" href="#" onClick={preventDefault}>
+      <ListItem button color="inherit" href="/#status" component="a">
         {t('Status Page')}
       </ListItem>
-      <ListItem button color="inherit" href="#" onClick={preventDefault}>
+      <ListItem button color="inherit" href="/#pricing" component="a">
         {t('Pricing')}
       </ListItem>
     </List>

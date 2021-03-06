@@ -6,6 +6,7 @@ import NextHead from 'next/head';
 import { useRouter } from 'next/router';
 
 import {
+  __DEV___,
   defaultCanonicalURL,
   defaultFontFamily,
   defaultLocale,
@@ -115,11 +116,13 @@ const Head: React.FC<Props> = ({
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
           />
         ))}
-      <script
-        defer
-        src="https://static.cloudflareinsights.com/beacon.min.js"
-        data-cf-beacon='{"token": "5cc45a88f3fd4270b085f138e39d03d8", "spa": true}'
-      />
+      {!__DEV___ && (
+        <script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "5cc45a88f3fd4270b085f138e39d03d8", "spa": true}'
+        />
+      )}
       {theme.typography.fontFamily === defaultFontFamily && (
         <link
           href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700"

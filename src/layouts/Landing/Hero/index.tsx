@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
   const classes = useStyles();
 
   return (
-    <EvenOddSection>
+    <EvenOddSection id="hero">
       <Container className={classes.container} maxWidth="md">
         <Slogan />
         <Hidden smDown>

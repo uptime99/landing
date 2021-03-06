@@ -26,6 +26,15 @@ export const base: any = {
     fontFamily: defaultFontFamily,
   },
   direction: 'ltr',
+  overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        html: {
+          scrollBehavior: 'smooth',
+        },
+      },
+    },
+  },
 };
 
 export const english = responsiveFontSizes(createMuiTheme(base));

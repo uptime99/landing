@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
   const classes = useStyles();
 
   return (
-    <EvenOddSection id="features">
+    <EvenOddSection id="status">
       <Container className={classes.container} maxWidth="md">
         <Slogan />
       </Container>

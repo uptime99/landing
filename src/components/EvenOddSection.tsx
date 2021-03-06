@@ -10,9 +10,6 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
     color: theme.palette.primary.contrastText,
     alignItems: 'center',
-    '&:first-child': {
-      height: 'calc(100vh - 64px)',
-    },
     '&:nth-child(odd)': {
       backgroundColor: theme.palette.primary.main,
     },
