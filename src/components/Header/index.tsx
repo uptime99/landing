@@ -108,10 +108,11 @@ const Header: React.FC<Props> = () => {
                     justifyContent="center"
                     flexDirection="row"
                     marginY={2}
+                    onClick={handleDrawerToggle}
                   >
                     <Logotype />
                   </Box>
-                  <Items />
+                  <Items onClick={handleDrawerToggle} />
                 </Drawer>
               </Hidden>
             </nav>
