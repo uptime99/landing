@@ -10,10 +10,19 @@ const useStyles = makeStyles((theme) => ({
   list: {
     display: 'flex',
     flexDirection: 'row',
+    padding: theme.spacing(0, 1, 0, 1),
+    '& > *': {
+      justifyContent: 'center',
+      width: 'unset',
+      borderRadius: theme.shape.borderRadius,
+    },
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
+      padding: 0,
       '& > *': {
         justifyContent: 'center',
+        borderRadius: 0,
+        width: '100%',
       },
     },
   },
