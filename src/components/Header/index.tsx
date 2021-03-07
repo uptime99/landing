@@ -17,7 +17,6 @@ import { useTranslation } from 'next-i18next';
 
 import { dashboardBaseURL, drawerWidth } from '@src/configuration';
 
-import BackToTop from './BackToTop';
 import Items from './Items';
 import Logotype from './Logotype';
 
@@ -126,7 +125,6 @@ const Header: React.FC<Props> = () => {
           </Toolbar>
         </Container>
       </AppBar>
-      <BackToTop />
     </>
   );
 };
