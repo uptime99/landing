@@ -1,13 +1,21 @@
 {
   "Features": "Features",
   "Free Website Monitoring": "Free Website Monitoring",
+  "Heartbeat monitoring (Cron)": "Heartbeat monitoring (Cron)",
+  "Heartbeat monitoring (Cron) description": "You send request and we check if it arrives on time. Great way to monitor recurring jobs or intranet devices connected to the internet.",
   "Integration": "Integration",
   "Login / Register": "Login / Register",
   "No credit card required!": "No credit card required!",
+  "Port & ping monitoring": "Port & ping monitoring",
+  "Port & ping monitoring description": "Is your server online? Is the email service running on port 465 still UP? Let's check! Monitor any specific port or ping any service.",
   "Powered by": "Powered by",
   "Pricing": "Pricing",
+  "SSL certificate monitoring": "SSL certificate monitoring",
+  "SSL certificate monitoring description": "Don’t lose visitors because of expired SSL certificate. Get notified 30, 14 and 7 days before expiration so you have time to renew.",
   "Start monitoring in 30 seconds": "Start monitoring in 30 seconds",
   "Status Page": "Status Page",
   "Uptime99": "Uptime99",
-  "Uptime99 Description": "Get up to 50 website, port or heartbeat monitors for free. When something happens, we'll notify you via email, SMS, Telegram, Slack or many more ways."
+  "Uptime99 Description": "Get up to 50 website, port or heartbeat monitors for free. When something happens, we'll notify you via email, SMS, Telegram, Slack or many more ways.",
+  "Website monitoring": "Website monitoring",
+  "Website monitoring description": "Be the first who knows that your website is down. Reliable monitoring warns you before any significant troubles and saves you money."
 }

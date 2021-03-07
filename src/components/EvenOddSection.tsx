@@ -8,7 +8,8 @@ type Props = React.ComponentProps<typeof Box>;
 const useStyles = makeStyles((theme) => ({
   section: {
     display: 'flex',
-    height: '100vh',
+    minHeight: '100vh',
+    padding: theme.spacing(2, 0),
     color: theme.palette.primary.contrastText,
     alignItems: 'center',
     '&:nth-child(odd)': {
