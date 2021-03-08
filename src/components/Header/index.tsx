@@ -15,10 +15,10 @@ import { Close as CloseIcon, Menu as MenuIcon } from '@material-ui/icons';
 
 import { useTranslation } from 'next-i18next';
 
+import Logotype from '@src/components/Logotype';
 import { dashboardBaseURL, drawerWidth } from '@src/configuration';
 
 import Items from './Items';
-import Logotype from './Logotype';
 
 type Props = {};
 

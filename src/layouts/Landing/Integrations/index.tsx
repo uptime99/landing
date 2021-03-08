@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         <Grid item md={6}>
           <Slogan />
         </Grid>
-        <Grid container item md={6} spacing={6} justify="center">
+        <Grid container item md={6} spacing={3} justify="center">
           <Grid item md={4} xs={6} container justify="center">
             <Images.Email />
           </Grid>

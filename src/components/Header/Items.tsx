@@ -46,7 +46,7 @@ const Items: React.FC<Props> = ({ onClick }) => {
       </Link>
       <Link href="/#integrations" passHref locale={locale}>
         <ListItem button color="inherit" component="a" onClick={onClick}>
-          {t('Integration')}
+          {t('Integrations')}
         </ListItem>
       </Link>
       <Link href="/#status" passHref locale={locale}>

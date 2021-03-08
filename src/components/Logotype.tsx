@@ -12,7 +12,9 @@ const Logotype: React.FC = () => {
   return (
     <Link href="/" passHref locale={locale}>
       <Anchor color="inherit" underline="none">
-        <Typography variant="h6">{t('Uptime99')}</Typography>
+        <Typography variant="h5" component="div">
+          {t('Uptime99')}
+        </Typography>
       </Anchor>
     </Link>
   );
