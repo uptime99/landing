@@ -9,28 +9,41 @@ const Slogan: React.FC = () => {
   switch (locale) {
     case 'fa':
       return (
-        <Typography component="h2" variant="h3" align="center" color="primary">
-          همه‌ی آنچه برایتان مهم است در یک جا{' '}
-          <Typography variant="inherit" color="secondary">
-            مانیتور
-          </Typography>{' '}
-          می‌شود
+        <Typography
+          component="h2"
+          variant="h4"
+          align="center"
+          color="inherit"
+          gutterBottom
+        >
+          هر وب سایتی امکان دان شدن در هر لحظه را دارد
           <Typography variant="inherit" color="secondary">
             .
+          </Typography>
+          <br />
+          ولی مهم اینکه شما{' '}
+          <Typography variant="inherit" color="secondary">
+            سریع مطلع بشید!
           </Typography>
         </Typography>
       );
     case 'en':
     default:
       return (
-        <Typography component="h2" variant="h3" align="center" color="primary">
-          All you really care about{' '}
-          <Typography variant="inherit" color="secondary">
-            monitored
-          </Typography>{' '}
-          at one place
+        <Typography
+          component="h2"
+          variant="h4"
+          align="center"
+          color="inherit"
+          gutterBottom
+        >
+          Downtime happens
           <Typography variant="inherit" color="secondary">
             .
+          </Typography>
+          <br />
+          <Typography variant="inherit" color="secondary">
+            Get notified!
           </Typography>
         </Typography>
       );

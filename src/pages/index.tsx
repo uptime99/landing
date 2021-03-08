@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { GetStaticProps, NextPage } from 'next';
+import { GetServerSideProps, NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import { SSRConfig } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -34,7 +34,7 @@ const Page: NextPage<Props> = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps<Props> = async ({
+export const getServerSideProps: GetServerSideProps<Props> = async ({
   locale = defaultLocale,
 }) => ({
   props: {
