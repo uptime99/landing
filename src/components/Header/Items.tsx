@@ -3,6 +3,8 @@ import { List, ListItem } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 import { useTranslation } from 'next-i18next';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 type Props = {
   onClick?: () => void;
@@ -33,45 +35,30 @@ const useStyles = makeStyles((theme) => ({
 const Items: React.FC<Props> = ({ onClick }) => {
   const { t } = useTranslation();
   const classes = useStyles();
+  const { locale } = useRouter();
 
   return (
     <List disablePadding className={classes.list}>
-      <ListItem
-        button
-        color="inherit"
-        href="/#features"
-        component="a"
-        onClick={onClick}
-      >
-        {t('Features')}
-      </ListItem>
-      <ListItem
-        button
-        color="inherit"
-        href="/#integrations"
-        component="a"
-        onClick={onClick}
-      >
-        {t('Integration')}
-      </ListItem>
-      <ListItem
-        button
-        color="inherit"
-        href="/#status"
-        component="a"
-        onClick={onClick}
-      >
-        {t('Status Page')}
-      </ListItem>
-      <ListItem
-        button
-        color="inherit"
-        href="/#pricing"
-        component="a"
-        onClick={onClick}
-      >
-        {t('Pricing')}
-      </ListItem>
+      <Link href="/#features" passHref locale={locale}>
+        <ListItem button color="inherit" component="a" onClick={onClick}>
+          {t('Features')}
+        </ListItem>
+      </Link>
+      <Link href="/#integrations" passHref locale={locale}>
+        <ListItem button color="inherit" component="a" onClick={onClick}>
+          {t('Integration')}
+        </ListItem>
+      </Link>
+      <Link href="/#status" passHref locale={locale}>
+        <ListItem button color="inherit" component="a" onClick={onClick}>
+          {t('Status Page')}
+        </ListItem>
+      </Link>
+      <Link href="/#pricing" passHref locale={locale}>
+        <ListItem button color="inherit" component="a" onClick={onClick}>
+          {t('Pricing')}
+        </ListItem>
+      </Link>
     </List>
   );
 };
