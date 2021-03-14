@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   },
 });
 
-const Hero: React.FC = () => {
+const Features: React.FC = () => {
   const classes = useStyles();
   const { t } = useTranslation();
 
@@ -57,4 +57,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Features;

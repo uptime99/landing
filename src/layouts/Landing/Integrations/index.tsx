@@ -6,7 +6,7 @@ import EvenOddSection from '@src/components/EvenOddSection';
 import * as Images from './Images';
 import Slogan from './Slogan';
 
-const Hero: React.FC = () => {
+const Integrations: React.FC = () => {
   return (
     <EvenOddSection id="integrations">
       <Grid container spacing={2} alignItems="center">
@@ -38,4 +38,4 @@ const Hero: React.FC = () => {
   );
 };
 
-export default Hero;
+export default Integrations;
