@@ -9,7 +9,7 @@ import Slogan from './Slogan';
 const Integrations: React.FC = () => {
   return (
     <EvenOddSection id="integrations">
-      <Grid container spacing={2} alignItems="center">
+      <Grid container spacing={1} alignItems="center">
         <Grid item md={6}>
           <Slogan />
         </Grid>
