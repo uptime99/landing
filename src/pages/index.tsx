@@ -27,9 +27,7 @@ const Page: NextPage<Props> = () => {
       >
         <Chat locale={locale} />
       </Head>
-      <Layout>
-        <div />
-      </Layout>
+      <Layout />
     </>
   );
 };

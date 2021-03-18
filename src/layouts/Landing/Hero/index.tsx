@@ -1,5 +1,4 @@
 import React from 'react';
-import { Hidden } from '@material-ui/core';
 
 import EvenOddSection from '@src/components/EvenOddSection';
 
@@ -10,9 +9,7 @@ const Hero: React.FC = () => {
   return (
     <EvenOddSection id="hero">
       <Slogan />
-      <Hidden smDown>
-        <Image />
-      </Hidden>
+      <Image />
     </EvenOddSection>
   );
 };

@@ -1,13 +1,16 @@
 import * as React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   '@keyframes fadeIn': {
     from: { opacity: 0 },
     to: { opacity: 1 },
   },
   hero: {
     animation: '$fadeIn 2s',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
   },
 }));
 
