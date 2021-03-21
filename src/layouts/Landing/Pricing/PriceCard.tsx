@@ -9,6 +9,8 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
+import { useTranslation } from 'next-i18next';
+
 type Props = {
   title: React.ReactNode;
   price: string;
@@ -74,6 +76,7 @@ const PriceCard: React.FC<Props> = ({
   buttonVariant,
 }) => {
   const classes = useStyles();
+  const { t } = useTranslation();
 
   return (
     <Card>
@@ -86,11 +89,11 @@ const PriceCard: React.FC<Props> = ({
       />
       <CardContent>
         <div className={classes.cardPricing}>
-          <Typography component="h2" variant="h3" color="textPrimary">
-            ${price}
+          <Typography component="h2" variant="h5" color="textPrimary">
+            {price}
           </Typography>
           <Typography variant="h6" color="textSecondary">
-            /mo
+            /{t('mo')}
           </Typography>
         </div>
         <ul>

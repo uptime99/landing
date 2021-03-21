@@ -1,6 +1,9 @@
 {
-  "": "",
+  "$0": "$0",
+  "$100": "$100",
+  "$7": "$7",
   "0": "0",
+  "0$": "0$",
   "1 Status page": "1 Status page",
   "3 months log retention": "3 months log retention",
   "API": "API",
@@ -14,6 +17,8 @@
   "Download the mobile app": "Download the mobile app",
   "FAQs": "FAQs",
   "Features": "Features",
+  "For organizations & big companies": "For organizations & big companies",
+  "For small companies & groups": "For small companies & groups",
   "Free Website Monitoring": "Free Website Monitoring",
   "Free plan": "Free plan",
   "HTTP(S) monitoring (w/o SSL errors)": "HTTP(S) monitoring (w/o SSL errors)",
@@ -28,20 +33,16 @@
   "Mobile app (Android & iOS)": "Mobile app (Android & iOS)",
   "Monitoring": "Monitoring",
   "No SMS or voice call alerts": "No SMS or voice call alerts",
-  "No credit card required": "No credit card required",
   "No credit card required!": "No credit card required!",
   "PRO": "PRO",
   "Ping monitoring": "Ping monitoring",
   "Port & ping monitoring": "Port & ping monitoring",
   "Port & ping monitoring description": "Is your server online? Is the email service running on port 465 still UP? Let's check! Monitor any specific port or ping any service.",
   "Port monitoring": "Port monitoring",
-  "Powered by": "Powered by",
   "Pricing": "Pricing",
   "Register for FREE": "Register for FREE",
   "Response time monitoring": "Response time monitoring",
-  "SSL cert": {
-    " expiry & errors": " expiry & errors"
-  },
+  "SSL cert. expiry & errors": "SSL cert. expiry & errors",
   "SSL certificate monitoring": "SSL certificate monitoring",
   "SSL certificate monitoring description": "Don’t lose visitors because of expired SSL certificate. Get notified 30, 14 and 7 days before expiration so you have time to renew.",
   "Set password for Status page": "Set password for Status page",
@@ -51,13 +52,12 @@
   "Status page subscription": "Status page subscription",
   "Subscribe now": "Subscribe now",
   "Terms / Privacy": "Terms / Privacy",
-  "Unlimited no": {
-    " of Status pages": " of Status pages"
-  },
+  "Unlimited no. of Status pages": "Unlimited no. of Status pages",
   "Uptime99": "Uptime99",
   "Uptime99 Description": "Get up to 50 website, port or heartbeat monitors for free. When something happens, we'll notify you via email, SMS, Telegram, Slack or many more ways.",
   "Website monitoring": "Website monitoring",
   "Website monitoring description": "Be the first who knows that your website is down. Reliable monitoring warns you before any significant troubles and saves you money.",
   "White-labeled Status pages": "White-labeled Status pages",
+  "mo": "mo",
   "plan": "plan"
 }
