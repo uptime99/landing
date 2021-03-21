@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: theme.spacing(8),
   },
 }));
 

@@ -45,7 +45,7 @@ const Footer: React.FC<Props> = () => {
   return (
     <footer className={classes.footer}>
       <Container className={classes.container} maxWidth="md">
-        <Grid container spacing={2}>
+        <Grid container spacing={3}>
           <Grid item md={3} xs={12}>
             <Logotype />
             <Box display="flex" flexDirection="row">
