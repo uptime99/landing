@@ -9,5 +9,6 @@ module.exports = {
     serializeConfig: true,
     strictMode: true,
     localeDetection: false,
+    keySeparator: null,
   },
 };
